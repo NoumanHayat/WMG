@@ -56,7 +56,7 @@ const SignIn = ({ navigation }) => {
                 flex: 1,
               }}>
               <Image
-                source={images.logo}
+                source={require('../../../assets/images/splash.png')}
                 resizeMode="contain"
                 style={{
                   height: 250,

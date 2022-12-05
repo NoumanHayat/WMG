@@ -61,7 +61,7 @@ export const SearchBar: FC<Props> = ({
         </TouchableNativeFeedback>
         {/* <AppText style={{ color: placeholderColor, fontSize: 16 }}>{placeholder}</AppText> */}
         <TextInput
-          placeholder="Search PRODUCT BY PRODUCT ID"
+          placeholder="Produktnummer"
           keyboardType='numeric'
           placeholderTextColor="gray"
           onChangeText={(value) => setSearch(value)}

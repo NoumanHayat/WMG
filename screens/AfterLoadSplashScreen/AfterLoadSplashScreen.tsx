@@ -11,7 +11,7 @@ const slides: { key: string; title: string; text: string; image: Source; backgro
   {
     key: 'one',
     title: 'Fotos von Geräten',
-    text: 'Fotos werden nur als Hilfsdienst verwendet. Wenn Sie sich nicht sicher sind, fragen Sie immer Ihren Teamleiter um Hilfe.. ',
+    text: 'Fotos werden nur als Hilfsdienst verwendet. Wenn Sie sich nicht sicher sind, fragen Sie immer Ihren Teamleiter um Hilfe.',
     image: images.introPic0,
     backgroundColor: '#59b2ab',
   }

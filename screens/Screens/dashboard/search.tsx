@@ -221,6 +221,7 @@ import { SearchBar } from '../../../components/SearchBar';
 // eslint-disable-next-line react/prop-types
 
 const CustomCard = ({ navigation }) => {
+
     const [visible, setVisible] = useState(false);
     return (
         <View>
@@ -274,7 +275,7 @@ const CustomCard = ({ navigation }) => {
                                         height: 50,
                                         borderRadius: 1,
                                         resizeMode: 'stretch',
-                                    }} source={images.logo} />
+                                    }} source={require('../../../assets/images/splash.png')} />
                                 </View>
                                 <View>
                                     <View style={{ flexDirection: 'row' }}>
@@ -288,13 +289,13 @@ const CustomCard = ({ navigation }) => {
                                                             source={{ uri: 'https://cdn.pixabay.com/photo/2016/03/04/19/36/gears-1236578_960_720.jpg' }}
                                                         />
                                                     </View>
-                                                    <Card.Title>PHOTO GALLERY MECHANIC</Card.Title>
+                                                    <Card.Title>Aufbau</Card.Title>
                                                 </TouchableOpacity>
                                             </Card>
                                         </View>
                                         <View style={{ width: '50%' }}>
                                             <Card style={{ justifyContent: 'center', alignItems: 'center' }}>
-                                                <TouchableOpacity onPress={() => {  navigation.push('Gallery')}}>
+                                                <TouchableOpacity onPress={() => { navigation.push('Gallery') }}>
                                                     <View style={{ alignItems: 'center', padding: 20, paddingBottom: 0 }}>
                                                         <Card.Image
                                                             style={{ width: 80, height: 70 }}
@@ -302,7 +303,7 @@ const CustomCard = ({ navigation }) => {
                                                             source={{ uri: 'https://media.istockphoto.com/id/1257394919/photo/pair-of-handbrake-cables-from-a-car-or-motorcycle-on-a-white-isolated-background-during.jpg?s=612x612&w=is&k=20&c=elwZ1Qm5lkHA69tLoMWGpnTS2ksoGH3borXt1a4nOkw=' }}
                                                         />
                                                     </View>
-                                                    <Card.Title>PHOTO GALLERY WIRING</Card.Title>
+                                                    <Card.Title>Verdrahtung</Card.Title>
                                                 </TouchableOpacity>
                                             </Card>
                                         </View>
@@ -310,7 +311,7 @@ const CustomCard = ({ navigation }) => {
                                     <View style={{ flexDirection: 'row' }}>
                                         <View style={{ width: '50%' }}>
                                             <Card style={{ justifyContent: 'center', alignItems: 'center' }}>
-                                                <TouchableOpacity onPress={() => {  navigation.push('Gallery') }}>
+                                                <TouchableOpacity onPress={() => { navigation.push('Gallery') }}>
                                                     <View style={{ alignItems: 'center', padding: 20, paddingBottom: 0 }}>
                                                         <Card.Image
                                                             style={{ width: 80, height: 70 }}
@@ -318,15 +319,14 @@ const CustomCard = ({ navigation }) => {
                                                             source={{ uri: 'https://media.istockphoto.com/id/609908294/photo/khao-yai-art-museum.jpg?s=1024x1024&w=is&k=20&c=a4kE29cFJ0nQGdjqCnZFA7FANUl5YA-aSGpUv6-KiyM=' }}
                                                         />
                                                     </View>
-                                                    <Card.Title>PHOTO GALLERY
-                                                        COMPLETED
+                                                    <Card.Title>Kabelsatz
                                                     </Card.Title>
                                                 </TouchableOpacity>
                                             </Card>
                                         </View>
                                         <View style={{ width: '50%' }}>
                                             <Card style={{ justifyContent: 'center', alignItems: 'center' }}>
-                                                <TouchableOpacity onPress={() => {  navigation.push('Gallery'); }}>
+                                                <TouchableOpacity onPress={() => { navigation.push('Gallery'); }}>
                                                     <View style={{ alignItems: 'center', padding: 20, paddingBottom: 0 }}>
                                                         <Card.Image
                                                             style={{ width: 80, height: 70 }}
@@ -334,8 +334,7 @@ const CustomCard = ({ navigation }) => {
                                                             source={{ uri: 'https://media.istockphoto.com/id/1186357899/vector/fast-services-check-list-and-stopwatch-quick-questionnaire-short-survey.jpg?s=1024x1024&w=is&k=20&c=-NxciFA89QyZQiKrEdlbwEeqrHujgTeblxPTRsmN7mw=' }}
                                                         />
                                                     </View>
-                                                    <Card.Title>PHOTO GALLERY
-                                                        TESTING
+                                                    <Card.Title style={{fontSize:14}}>Verdrahtungsliste
                                                     </Card.Title>
                                                 </TouchableOpacity>
                                             </Card>
@@ -350,7 +349,8 @@ const CustomCard = ({ navigation }) => {
         </View>
     );
 };
-const Profile = ({ navigation }) => {
+const Profile = ({ navigation, route }) => {
+    let name = route.params;
     const [search, setSearch] = useState('');
     const [searchVisible, setSearchVisible] = useState(false);
     return (
@@ -370,16 +370,16 @@ const Profile = ({ navigation }) => {
                         }}>
                         <View style={{ margin: 15, marginTop: 10 }}>
                             <View style={{ margin: 5, justifyContent: 'center', alignItems: 'center', fontWeight: 'bold' }}>
-                                <Text style={{ fontSize: 30, color: 'black' }}>Customer Name</Text>
+                                <Text style={{ fontSize: 30, color: 'black' }}>{name}</Text>
                             </View>
                             <View style={styles.userInfoSection}>
                                 <SearchBar onPress={() => { setSearchVisible(true) }} backgroudColor={COLORS.lightGray} placeholderColor={COLORS.dark} setSearch={setSearch} />
                             </View>
-                            {searchVisible ?  <View style={styles.OrganizedEvent}>
+                            {searchVisible ? <View style={styles.OrganizedEvent}>
                                 <View style={{ marginTop: 10 }}>
                                     <CustomCard navigation={navigation} />
                                 </View>
-                            </View>:<Text></Text> }
+                            </View> : <Text></Text>}
 
                         </View>
                     </View>

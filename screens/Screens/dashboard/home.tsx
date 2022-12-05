@@ -37,7 +37,7 @@ const Screen = ({ navigation }) => {
                         flex:0.2
                     }}>
                     <Image
-                        source={images.logo}
+                        source={require('../../../assets/images/splash.png')}
                         resizeMode="contain"
                         style={{
                             height: 250,
@@ -50,7 +50,7 @@ const Screen = ({ navigation }) => {
                     <View style={{ flexDirection: 'row' }}>
                         <View style={{ width: '50%' }}>
                             <Card style={{ justifyContent: 'center', alignItems: 'center' }}>
-                                <TouchableOpacity onPress={() => { navigation.push('Search')}}>
+                                <TouchableOpacity onPress={() => { navigation.push('Search','Kunde 1')}}>
                                     <View style={{ alignItems: 'center', padding: 20, paddingBottom: 0 }}>
                                         <Card.Image
                                             style={{ width: 80, height: 70 }}
@@ -58,13 +58,13 @@ const Screen = ({ navigation }) => {
                                             source={{ uri: 'https://cdn.techjuice.pk/wp-content/uploads/2015/02/wallpaper-for-facebook-profile-photo.jpg' }}
                                             />
                                     </View>
-                                    <Card.Title>Customer</Card.Title>
+                                    <Card.Title>Kunde 1</Card.Title>
                                 </TouchableOpacity>
                             </Card>
                         </View>
                         <View style={{ width: '50%' }}>
                             <Card style={{ justifyContent: 'center', alignItems: 'center' }}>
-                                <TouchableOpacity onPress={() => { navigation.push('Search') }}>
+                                <TouchableOpacity onPress={() => { navigation.push('Search','Kunde 2') }}>
                                     <View style={{ alignItems: 'center', padding: 20, paddingBottom: 0 }}>
                                         <Card.Image
                                             style={{ width: 80, height: 70 }}
@@ -72,37 +72,7 @@ const Screen = ({ navigation }) => {
                                             source={{ uri: 'https://cdn.techjuice.pk/wp-content/uploads/2015/02/wallpaper-for-facebook-profile-photo.jpg' }}
                                             />
                                     </View>
-                                    <Card.Title>Customer</Card.Title>
-                                </TouchableOpacity>
-                            </Card>
-                        </View>
-                    </View>
-                    <View style={{ flexDirection: 'row' }}>
-                        <View style={{ width: '50%' }}>
-                            <Card style={{ justifyContent: 'center', alignItems: 'center' }}>
-                                <TouchableOpacity onPress={() => { navigation.push('Search') }}>
-                                    <View style={{ alignItems: 'center', padding: 20, paddingBottom: 0 }}>
-                                        <Card.Image
-                                            style={{ width: 80, height: 70 }}
-                                            resizeMode="cover"
-                                            source={{ uri: 'https://cdn.techjuice.pk/wp-content/uploads/2015/02/wallpaper-for-facebook-profile-photo.jpg' }}
-                                            />
-                                    </View>
-                                    <Card.Title>Customer</Card.Title>
-                                </TouchableOpacity>
-                            </Card>
-                        </View>
-                        <View style={{ width: '50%' }}>
-                            <Card style={{ justifyContent: 'center', alignItems: 'center' }}>
-                                <TouchableOpacity onPress={() => { navigation.push('Search') }}>
-                                    <View style={{ alignItems: 'center', padding: 20, paddingBottom: 0 }}>
-                                        <Card.Image
-                                            style={{ width: 80, height: 70 }}
-                                            resizeMode="cover"
-                                            source={{ uri: 'https://cdn.techjuice.pk/wp-content/uploads/2015/02/wallpaper-for-facebook-profile-photo.jpg' }}
-                                            />
-                                    </View>
-                                    <Card.Title>Customer</Card.Title>
+                                    <Card.Title>Kunde 2</Card.Title>
                                 </TouchableOpacity>
                             </Card>
                         </View>
@@ -110,7 +80,7 @@ const Screen = ({ navigation }) => {
                     <View style={{ flexDirection: 'row' }}>
                         <View style={{ width: '50%' }}>
                             <Card style={{ justifyContent: 'center', alignItems: 'center' }}>
-                                <TouchableOpacity onPress={() => { navigation.push('Search') }}>
+                                <TouchableOpacity onPress={() => { navigation.push('Search','Kunde 3') }}>
                                     <View style={{ alignItems: 'center', padding: 20, paddingBottom: 0 }}>
                                         <Card.Image
                                             style={{ width: 80, height: 70 }}
@@ -118,13 +88,13 @@ const Screen = ({ navigation }) => {
                                             source={{ uri: 'https://cdn.techjuice.pk/wp-content/uploads/2015/02/wallpaper-for-facebook-profile-photo.jpg' }}
                                             />
                                     </View>
-                                    <Card.Title>Customer</Card.Title>
+                                    <Card.Title>Kunde 3</Card.Title>
                                 </TouchableOpacity>
                             </Card>
                         </View>
                         <View style={{ width: '50%' }}>
                             <Card style={{ justifyContent: 'center', alignItems: 'center' }}>
-                                <TouchableOpacity onPress={() => { navigation.push('Search') }}>
+                                <TouchableOpacity onPress={() => { navigation.push('Search','Kunde 4') }}>
                                     <View style={{ alignItems: 'center', padding: 20, paddingBottom: 0 }}>
                                         <Card.Image
                                             style={{ width: 80, height: 70 }}
@@ -132,7 +102,7 @@ const Screen = ({ navigation }) => {
                                             source={{ uri: 'https://cdn.techjuice.pk/wp-content/uploads/2015/02/wallpaper-for-facebook-profile-photo.jpg' }}
                                             />
                                     </View>
-                                    <Card.Title>Customer</Card.Title>
+                                    <Card.Title>Kunde 4</Card.Title>
                                 </TouchableOpacity>
                             </Card>
                         </View>
@@ -140,7 +110,7 @@ const Screen = ({ navigation }) => {
                     <View style={{ flexDirection: 'row' }}>
                         <View style={{ width: '50%' }}>
                             <Card style={{ justifyContent: 'center', alignItems: 'center' }}>
-                                <TouchableOpacity onPress={() => { navigation.push('Search') }}>
+                                <TouchableOpacity onPress={() => { navigation.push('Search','Kunde 5') }}>
                                     <View style={{ alignItems: 'center', padding: 20, paddingBottom: 0 }}>
                                         <Card.Image
                                             style={{ width: 80, height: 70 }}
@@ -148,13 +118,13 @@ const Screen = ({ navigation }) => {
                                             source={{ uri: 'https://cdn.techjuice.pk/wp-content/uploads/2015/02/wallpaper-for-facebook-profile-photo.jpg' }}
                                             />
                                     </View>
-                                    <Card.Title>Customer</Card.Title>
+                                    <Card.Title>Kunde 5</Card.Title>
                                 </TouchableOpacity>
                             </Card>
                         </View>
                         <View style={{ width: '50%' }}>
                             <Card style={{ justifyContent: 'center', alignItems: 'center' }}>
-                                <TouchableOpacity onPress={() => { navigation.push('Search') }}>
+                                <TouchableOpacity onPress={() => { navigation.push('Search','Kunde 6') }}>
                                     <View style={{ alignItems: 'center', padding: 20, paddingBottom: 0 }}>
                                         <Card.Image
                                             style={{ width: 80, height: 70 }}
@@ -162,7 +132,37 @@ const Screen = ({ navigation }) => {
                                             source={{ uri: 'https://cdn.techjuice.pk/wp-content/uploads/2015/02/wallpaper-for-facebook-profile-photo.jpg' }}
                                             />
                                     </View>
-                                    <Card.Title>Customer</Card.Title>
+                                    <Card.Title>Kunde 6</Card.Title>
+                                </TouchableOpacity>
+                            </Card>
+                        </View>
+                    </View>
+                    <View style={{ flexDirection: 'row' }}>
+                        <View style={{ width: '50%' }}>
+                            <Card style={{ justifyContent: 'center', alignItems: 'center' }}>
+                                <TouchableOpacity onPress={() => { navigation.push('Search','Kunde 7') }}>
+                                    <View style={{ alignItems: 'center', padding: 20, paddingBottom: 0 }}>
+                                        <Card.Image
+                                            style={{ width: 80, height: 70 }}
+                                            resizeMode="cover"
+                                            source={{ uri: 'https://cdn.techjuice.pk/wp-content/uploads/2015/02/wallpaper-for-facebook-profile-photo.jpg' }}
+                                            />
+                                    </View>
+                                    <Card.Title>Kunde 7</Card.Title>
+                                </TouchableOpacity>
+                            </Card>
+                        </View>
+                        <View style={{ width: '50%' }}>
+                            <Card style={{ justifyContent: 'center', alignItems: 'center' }}>
+                                <TouchableOpacity onPress={() => { navigation.push('Search','Kunde 8') }}>
+                                    <View style={{ alignItems: 'center', padding: 20, paddingBottom: 0 }}>
+                                        <Card.Image
+                                            style={{ width: 80, height: 70 }}
+                                            resizeMode="cover"
+                                            source={{ uri: 'https://cdn.techjuice.pk/wp-content/uploads/2015/02/wallpaper-for-facebook-profile-photo.jpg' }}
+                                            />
+                                    </View>
+                                    <Card.Title>Kunde 8</Card.Title>
                                 </TouchableOpacity>
                             </Card>
                         </View>

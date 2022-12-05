@@ -7,7 +7,6 @@ const ad = require('../assets/temp/ad.png');
 const splash_image = require('../assets/temp/splash_image.png');
 const barbarian = require('../assets/images/barbarian.png');
 const wizard = require('../assets/images/wizard.png');
-const userProfilePic = 'https://fakeface.rest/thumb/view?gender=female&minimum_age=30';
 const king=require('../assets/images/king.png');
 const challengeParticipants = [
   {
@@ -209,7 +208,6 @@ export default {
   challengeParticipants,
   challengeParticipantsResults,
   friends,
-  userProfilePic,
   exercises,
   trophyImage,
   exerciseImage,
