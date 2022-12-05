@@ -63,13 +63,15 @@ export const SearchBar: FC<Props> = ({
         <TextInput
           placeholder="Search PRODUCT BY PRODUCT ID"
           keyboardType='numeric'
+          placeholderTextColor="gray"
           onChangeText={(value) => setSearch(value)}
           autoCapitalize={'none'}
           style={{
             flex: 1,
             height: 40.5,
             fontSize: 15,
-            marginLeft: 2
+            marginLeft: 2,
+            color: 'black',
           }}
         />
       </View>

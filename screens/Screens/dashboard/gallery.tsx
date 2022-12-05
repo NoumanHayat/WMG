@@ -51,8 +51,8 @@ const Screen = ({navigation}) => {
                         <TouchableOpacity key={index} onPress={() => { navigation.push("Image",imagee) }}>
                             <Image source={imagee.source} style={
                                 {
-                                    height: deviceHeight / 3.1,
-                                    width: deviceWidth / 3.1,
+                                    height: deviceHeight / 3.2,
+                                    width: deviceWidth / 3.2,
                                     borderRadius: 10,
                                     margin: 2
                                 }

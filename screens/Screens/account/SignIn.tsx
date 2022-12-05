@@ -85,6 +85,7 @@ const SignIn = ({ navigation }) => {
                 />
                 <TextInput
                   placeholder="Enter your email or phone number..."
+                  placeholderTextColor="gray"
                   onChangeText={value => setEmail(value)}
                   autoCapitalize={'none'}
                   style={{
@@ -113,6 +114,7 @@ const SignIn = ({ navigation }) => {
                 />
                 <TextInput
                   placeholder="Enter your password..."
+                  placeholderTextColor="gray"
                   secureTextEntry={data.secureTextEntry ? true : false}
                   onChangeText={value => setPassword(value)}
                   style={{

@@ -280,7 +280,7 @@ const CustomCard = ({ navigation }) => {
                                     <View style={{ flexDirection: 'row' }}>
                                         <View style={{ width: '50%' }}>
                                             <Card style={{ justifyContent: 'center', alignItems: 'center' }}>
-                                                <TouchableOpacity onPress={() => { alert('ok'); }}>
+                                                <TouchableOpacity onPress={() => { navigation.push('Gallery') }}>
                                                     <View style={{ alignItems: 'center', padding: 20, paddingBottom: 0 }}>
                                                         <Card.Image
                                                             style={{ width: 80, height: 70 }}
@@ -294,7 +294,7 @@ const CustomCard = ({ navigation }) => {
                                         </View>
                                         <View style={{ width: '50%' }}>
                                             <Card style={{ justifyContent: 'center', alignItems: 'center' }}>
-                                                <TouchableOpacity onPress={() => { alert('ok'); }}>
+                                                <TouchableOpacity onPress={() => {  navigation.push('Gallery')}}>
                                                     <View style={{ alignItems: 'center', padding: 20, paddingBottom: 0 }}>
                                                         <Card.Image
                                                             style={{ width: 80, height: 70 }}
@@ -310,7 +310,7 @@ const CustomCard = ({ navigation }) => {
                                     <View style={{ flexDirection: 'row' }}>
                                         <View style={{ width: '50%' }}>
                                             <Card style={{ justifyContent: 'center', alignItems: 'center' }}>
-                                                <TouchableOpacity onPress={() => { alert('ok'); }}>
+                                                <TouchableOpacity onPress={() => {  navigation.push('Gallery') }}>
                                                     <View style={{ alignItems: 'center', padding: 20, paddingBottom: 0 }}>
                                                         <Card.Image
                                                             style={{ width: 80, height: 70 }}
@@ -326,7 +326,7 @@ const CustomCard = ({ navigation }) => {
                                         </View>
                                         <View style={{ width: '50%' }}>
                                             <Card style={{ justifyContent: 'center', alignItems: 'center' }}>
-                                                <TouchableOpacity onPress={() => { alert('ok'); }}>
+                                                <TouchableOpacity onPress={() => {  navigation.push('Gallery'); }}>
                                                     <View style={{ alignItems: 'center', padding: 20, paddingBottom: 0 }}>
                                                         <Card.Image
                                                             style={{ width: 80, height: 70 }}

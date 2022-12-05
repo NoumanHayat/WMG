@@ -27,7 +27,7 @@ function AppStarting() {
       screenOptions={{
         headerShown: false,
       }}
-      initialRouteName="Gallery">
+      initialRouteName="SignIn">
       <Stack.Screen name="SignIn" component={SignIn} />
       <Stack.Screen name="Dashboard" component={dashboard} />
       <Stack.Screen name="Search" component={Search} />
