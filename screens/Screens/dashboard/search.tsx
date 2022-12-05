@@ -204,7 +204,7 @@ import {
     StyleSheet,
     Text,
     TextInput,
-    TouchableOpacity,
+     TouchableOpacity,
     View, Modal, FlatList,
 } from 'react-native';
 import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view';
@@ -213,6 +213,8 @@ import { Avatar, Title } from 'react-native-paper';
 import ModalLayout from './ModalLayout';
 import { FAB, Card } from 'react-native-elements';
 import { SearchBar } from '../../../components/SearchBar';
+// import { TouchableOpacity } from 'react-native-gesture-handler';
+
 
 // import auth from '@react-native-firebase/auth';
 
@@ -226,7 +228,7 @@ const CustomCard = ({ navigation }) => {
     return (
         <View>
             <TouchableOpacity onPress={() => {
-                setVisible(true);
+                setVisible(!visible);
             }}>
                 <View style={{
                     backgroundColor: '#F7F7FE', borderRadius: 10, marginBottom: 15,
@@ -281,7 +283,7 @@ const CustomCard = ({ navigation }) => {
                                     <View style={{ flexDirection: 'row' }}>
                                         <View style={{ width: '50%' }}>
                                             <Card style={{ justifyContent: 'center', alignItems: 'center' }}>
-                                                <TouchableOpacity onPress={() => { navigation.push('Gallery') }}>
+                                                <TouchableOpacity onPress={() => { setVisible(!visible);navigation.navigate('Gallery'); }}>
                                                     <View style={{ alignItems: 'center', padding: 20, paddingBottom: 0 }}>
                                                         <Card.Image
                                                             style={{ width: 80, height: 70 }}
@@ -295,7 +297,7 @@ const CustomCard = ({ navigation }) => {
                                         </View>
                                         <View style={{ width: '50%' }}>
                                             <Card style={{ justifyContent: 'center', alignItems: 'center' }}>
-                                                <TouchableOpacity onPress={() => { navigation.push('Gallery') }}>
+                                                <TouchableOpacity onPress={() => { setVisible(!visible);navigation.navigate('Gallery') }}>
                                                     <View style={{ alignItems: 'center', padding: 20, paddingBottom: 0 }}>
                                                         <Card.Image
                                                             style={{ width: 80, height: 70 }}
@@ -311,7 +313,7 @@ const CustomCard = ({ navigation }) => {
                                     <View style={{ flexDirection: 'row' }}>
                                         <View style={{ width: '50%' }}>
                                             <Card style={{ justifyContent: 'center', alignItems: 'center' }}>
-                                                <TouchableOpacity onPress={() => { navigation.push('Gallery') }}>
+                                                <TouchableOpacity onPress={() => { setVisible(!visible);navigation.navigate('Gallery') }}>
                                                     <View style={{ alignItems: 'center', padding: 20, paddingBottom: 0 }}>
                                                         <Card.Image
                                                             style={{ width: 80, height: 70 }}
@@ -326,7 +328,7 @@ const CustomCard = ({ navigation }) => {
                                         </View>
                                         <View style={{ width: '50%' }}>
                                             <Card style={{ justifyContent: 'center', alignItems: 'center' }}>
-                                                <TouchableOpacity onPress={() => { navigation.push('Gallery'); }}>
+                                                <TouchableOpacity onPress={() => { setVisible(!visible);navigation.navigate('Gallery'); }}>
                                                     <View style={{ alignItems: 'center', padding: 20, paddingBottom: 0 }}>
                                                         <Card.Image
                                                             style={{ width: 80, height: 70 }}
@@ -334,7 +336,7 @@ const CustomCard = ({ navigation }) => {
                                                             source={{ uri: 'https://media.istockphoto.com/id/1186357899/vector/fast-services-check-list-and-stopwatch-quick-questionnaire-short-survey.jpg?s=1024x1024&w=is&k=20&c=-NxciFA89QyZQiKrEdlbwEeqrHujgTeblxPTRsmN7mw=' }}
                                                         />
                                                     </View>
-                                                    <Card.Title style={{fontSize:14}}>Verdrahtungsliste
+                                                    <Card.Title style={{ fontSize: 14 }}>Unterlagen
                                                     </Card.Title>
                                                 </TouchableOpacity>
                                             </Card>
