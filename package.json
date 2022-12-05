@@ -13,6 +13,7 @@
     "build": "cd android && gradlew assembleDebug && cd ../"
   },
   "dependencies": {
+    "@georstat/react-native-image-gallery": "^1.1.0",
     "@react-navigation/bottom-tabs": "^6.4.0",
     "@react-navigation/drawer": "^6.5.1",
     "@react-navigation/material-bottom-tabs": "^6.2.4",

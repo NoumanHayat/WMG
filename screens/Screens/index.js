@@ -18,6 +18,8 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import SignIn from './account/SignIn';
 import Search from './dashboard/search';
 import dashboard from './dashboard';
+import Gallery from './dashboard/gallery';
+import Image from './dashboard/image';
 // import { TouchableOpacity } from 'react-native-gesture-handler'; 
 function AppStarting() {
   return (
@@ -25,10 +27,12 @@ function AppStarting() {
       screenOptions={{
         headerShown: false,
       }}
-      initialRouteName="SignIn">
+      initialRouteName="Gallery">
       <Stack.Screen name="SignIn" component={SignIn} />
       <Stack.Screen name="Dashboard" component={dashboard} />
       <Stack.Screen name="Search" component={Search} />
+      <Stack.Screen name="Gallery" component={Gallery} />
+      <Stack.Screen name="Image" component={Image} />
       {/* <Stack.Screen name="proposalDetails" component={proposalDetails} />
       <Stack.Screen name="Chat" component={chat} /> */}
     </Stack.Navigator>
